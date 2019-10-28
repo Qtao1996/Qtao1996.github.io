@@ -10,8 +10,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="LSTM  长短期记忆网络
-"> 
+    <meta name="description" content="LSTM  长短期记忆网络什么是LSTM:https://www.cnblogs.com/micrari/p/9222297.html    
+    好多人推荐先看这个------http://c,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -64,8 +64,33 @@
 
         </div>
         <div class="content markdown">
-            <p>LSTM  长短期记忆网络</p>
+            <h2 id="LSTM-长短期记忆网络"><a href="#LSTM-长短期记忆网络" class="headerlink" title="LSTM  长短期记忆网络"></a>LSTM  长短期记忆网络</h2><pre><code>什么是LSTM:https://www.cnblogs.com/micrari/p/9222297.html    
+    好多人推荐先看这个------http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
+
+在传统的RNN结构当中，内部有一个tanh层：
+    tanh层是     双曲正切    他的值域是属于（-1，1）
+而在LSTM当中：
+     水平长线代表的是状态信息，可以理解为记忆
+    并且在LSTM当中是存在一个sigmoid函数的
+        sigmoid函数是一个---收敛速度慢  他的值域是在（0，1）
+    在LSTM当中是存在3个gate的
+    遗忘门：
+        是由两个输入来控制的，他是控制以遗忘成度的，通过sigmoid函数，使得ft在0-1之间
+    输入门：
+        是由sigmoid和tanh函数来控制的其中sigmoid函数控制它的状态信息的更新成度，
+    输出门：
+        是由一个sigmoid和一个tanh函数控制的
+
+状态信息Ct是由遗忘门和输入门控制的
+遗忘门和输入们都依赖于以前输入的参数h（t-1）
+当前层的输出ht依赖于Ct
+
+---
+在RNN中存在梯度爆炸和梯度消失的情况：
+https://zhuanlan.zhihu.com/p/28687529
+在LSTM中解决的问题：
+https://zhuanlan.zhihu.com/p/28749444 -----------这个不靠谱</code></pre>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
@@ -78,7 +103,7 @@
                         
                     
                         
-                            <li title='1' data-url='https://sharefs.yun.kugou.com/201910261047/94697b5bd49e104a5551b7f30b1c3fce/G080/M06/10/19/kA0DAFg5mL-AWO5tADZqRaoghBo259.mp3'></li>
+                            <li title='1' data-url='http://m10.music.126.net/20191028102211/59172cdb49be0ae99f2e16741ea7ca23/ymusic/0258/5659/045e/5289dde09ea3366948d534939748babe.mp3'></li>
                         
                     
                 </ul>
